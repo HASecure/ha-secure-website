@@ -1,0 +1,9 @@
+{
+  "name": "HA Secure",
+  "short_name": "HA Secure",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07111d",
+  "theme_color": "#07111d",
+  "icons": [{"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

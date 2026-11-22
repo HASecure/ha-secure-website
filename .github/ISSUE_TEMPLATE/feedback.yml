@@ -1,0 +1,54 @@
+name: "HA Secure – Feedback"
+description: "Interesse, Produktidee oder Rückmeldung zum HA-Secure-Portfolio"
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für dein Interesse. **Diese Rückmeldung wird als öffentliches GitHub-Issue sichtbar.** Bitte keine E-Mail-Adressen, Zugangsdaten, Tokens, privaten IPs, Hostnamen, Standortdaten oder vertraulichen Home-Assistant-Konfigurationen eintragen.
+  - type: dropdown
+    id: project
+    attributes:
+      label: Welches Produkt betrifft dein Feedback?
+      options:
+        - Allgemeines HA Secure
+        - Synology File Connector
+        - Universal NAS Connector
+        - Repo Config Guard
+        - AI Diagnostics
+        - Presence Simulator
+        - WireGuard Client App
+        - WireGuard Client Integration
+        - HA Secure Guard
+        - Certificate Guardian
+        - Mehrere Produkte
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Worum geht es?
+      options:
+        - Ich interessiere mich für das Produkt
+        - Feature-Idee
+        - Use Case / Anwendungsfall
+        - Verbesserungsvorschlag
+        - Fehler oder Problem
+        - Zusammenarbeit / Partnerschaft
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Deine Rückmeldung
+      description: Bitte möglichst kurz und ohne vertrauliche Daten.
+      placeholder: Was möchtest du uns mitteilen?
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Sichtbarkeit
+      options:
+        - label: Ich habe verstanden, dass diese Rückmeldung öffentlich auf GitHub erscheint.
+          required: true
