@@ -12,6 +12,7 @@ Die Website stellt neun Projekte mit kurzen deutschen und englischen Beschreibun
 - [Portfolio-Startseite](index.html)
 - [Produktpositionierung](positioning.html)
 - [AI- und Sicherheitsprinzipien](principles.html)
+- [Beta-Programm](beta.html)
 - [Datenschutzhinweise](privacy.html)
 
 ## Feedback
@@ -25,3 +26,7 @@ HA Secure befindet sich in aktiver Entwicklung. Beta-, experimentelle und Design
 ## Hosting
 
 Die Website ist als statische Seite für GitHub Pages vorbereitet. Es ist standardmäßig kein Google Analytics und kein eigener Werbe- oder Tracking-Code eingebunden.
+
+## Beta-Programm
+
+Die interne Bewerbungsbasis ist vorbereitet. Das öffentliche Testerformular bleibt bis zur Einrichtung und Prüfung der privaten Formularfreigabe geschlossen. Einladungen benötigen dokumentierte Beta-v1-Stable-Reife und interne Freigabe.
