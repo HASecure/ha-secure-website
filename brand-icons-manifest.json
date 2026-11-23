@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "brand": "HA Secure",
+  "source_archives": [
+    "HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip",
+    "HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip",
+    "HA_Secure_App_Icons_Master_HighRes_10_Icons.zip"
+  ],
+  "audited_source_count": 10,
+  "formats": {
+    "primary": "PNG 256x256",
+    "retina": "PNG 512x512",
+    "master": "JPG 1024x1024"
+  },
+  "products": [
+    {
+      "id": "ha-synology-file-connector",
+      "portfolio": "Synology File Connector",
+      "website": "assets/icons/ha-synology-file-connector.jpg",
+      "repo": "ha-synology-file-connector",
+      "source": [
+        "ha-synology-file-connector_icon.png",
+        "ha-synology-file-connector_icon@2x.png",
+        "ha-synology-file-connector_icon_master.jpg"
+      ],
+      "sha256": [
+        "76e2fe9ca43586e010dfe0a75bcd5ebc24de4c3f1acd33df30b61a187f1e0368",
+        "af6cd7f6e714d7d85fbdcf45884484f51783815c95fa4b905fb46da31a2c266d",
+        "48f0c8b059cd5426cc450cee568638d6330ab44754d436e704776450ca89a957"
+      ]
+    },
+    {
+      "id": "ha-multi-nas-file-connector",
+      "portfolio": "Universal NAS Connector",
+      "website": "assets/icons/ha-universal-nas-connector.jpg",
+      "repo": "ha-universal-nas-connector",
+      "source": [
+        "ha-multi-nas-file-connector_icon.png",
+        "ha-multi-nas-file-connector_icon@2x.png",
+        "ha-multi-nas-file-connector_icon_master.jpg"
+      ],
+      "sha256": [
+        "94b492b961ce0a8eb8c43e159e6b0b2df5a4e0d7cbc200c56b682b50a1128d05",
+        "04fe7f8d1eac481b2bb9805e70ef99bec5ff2a649d761e7ccc43f6b14481133d",
+        "cf6d75def47e4f9912fb48d8afc4489825fde3d7678fb32b463dbe16d34fb862"
+      ],
+      "mapping_note": "The uploaded source uses the product ID ha-multi-nas-file-connector; the public portfolio slug is ha-universal-nas-connector."
+    },
+    {
+      "id": "ha-repo-config-guard",
+      "portfolio": "Repo Config Guard",
+      "website": "assets/icons/ha-repo-config-guard.jpg",
+      "repo": "ha-repo-config-guard",
+      "source": [
+        "ha-repo-config-guard_icon.png",
+        "ha-repo-config-guard_icon@2x.png",
+        "ha-repo-config-guard_icon_master.jpg"
+      ],
+      "sha256": [
+        "df3d49456980002266bef1ea2aa281e535e4012d0e8e081fe3ea838c1d35171c",
+        "e32fc38844c68c635728ac663531bfa833437fb853fbbc41de964fd9fdfb51b7",
+        "d3475101e53b475bae97682883cca406f7ba7dd8631dac45566edad219a261de"
+      ]
+    },
+    {
+      "id": "ha-ai-diagnostics",
+      "portfolio": "AI Diagnostics",
+      "website": "assets/icons/ha-ai-diagnostics.jpg",
+      "repo": "ha-ai-diagnostics",
+      "source": [
+        "ha-ai-diagnostics_icon.png",
+        "ha-ai-diagnostics_icon@2x.png",
+        "ha-ai-diagnostics_icon_master.jpg"
+      ],
+      "sha256": [
+        "7b327ea3077d477febbad561c440b88546f0d3e886950fd80ba2fc450198e227",
+        "8d3e87055da612121efa87484e7af16d9c5b285065a9dbf88ad38ef4cee51d",
+        "a99092a7bdfeed1692d19277be8bd1484cc5abf5db4e1f4f5ff5e68a540d9da5"
+      ]
+    },
+    {
+      "id": "ha-presence-simulator",
+      "portfolio": "Presence Simulator",
+      "website": "assets/icons/ha-presence-simulator.jpg",
+      "repo": "ha-presence-simulator",
+      "source": [
+        "ha-presence-simulator_icon.png",
+        "ha-presence-simulator_icon@2x.png",
+        "ha-presence-simulator_icon_master.jpg"
+      ],
+      "sha256": [
+        "9fd54fb49a583faff805ebffd3204713639a4480b998cb98627d2c6ced146c27",
+        "e3af2f2efec5966d0ba2ca538704b1a6969f1a4ce990769514e560be3b28896a",
+        "d66a40718d7002ef26f11e598d10d638720f15e19c28bce37549efa89b5cf9cb"
+      ]
+    },
+    {
+      "id": "ha-wireguard-client-app",
+      "portfolio": "WireGuard Client App",
+      "website": "assets/icons/ha-wireguard-client-app.jpg",
+      "repo": "ha-wireguard-client-app",
+      "source": [
+        "ha-wireguard-client-app_icon.png",
+        "ha-wireguard-client-app_icon@2x.png",
+        "ha-wireguard-client-app_icon_master.jpg"
+      ],
+      "sha256": [
+        "0864b3f66ca536bf412ce0df74c96e8b7f7f136e2410d23a2b0f2fb8de051dee",
+        "449ee39593e4e818111a3898427e5cae1b8aab30930e8bed47c1d244f51cc245",
+        "a5f95396c215d7c450732f3934df44faf861ed6843bd1f362c97d4e5cd4ad553"
+      ]
+    },
+    {
+      "id": "ha-wireguard-client",
+      "portfolio": "WireGuard Client Integration",
+      "website": "assets/icons/ha-wireguard-client.jpg",
+      "repo": "ha-wireguard-client",
+      "source": [
+        "ha-wireguard-client_icon.png",
+        "ha-wireguard-client_icon@2x.png",
+        "ha-wireguard-client_icon_master.jpg"
+      ],
+      "sha256": [
+        "0dde2037f1134bfa20054251a372f412dbd352728d6f34fd7c257066e4333f56",
+        "214a47b3cf73e35fe0dc801228d55f6ef2cf713ff08e20e08919927571159341",
+        "71be89e7b3445d205e16c5cb84e7bbf1bd8e9e0856efa34d8f85c64c93716539"
+      ]
+    },
+    {
+      "id": "ha-secure-guard",
+      "portfolio": "HA Secure Guard",
+      "website": "assets/icons/ha-secure-guard.jpg",
+      "repo": "ha-secure-guard",
+      "source": [
+        "ha-secure-guard_icon.png",
+        "ha-secure-guard_icon@2x.png",
+        "ha-secure-guard_icon_master.jpg"
+      ],
+      "sha256": [
+        "63b29af102c128a74a8c68b4ad6c3c1f7fa4c99dcae0db0b4cf5f3d398415322",
+        "ac9b500f7cd579c343c2c764b471abfd1cbdd6548f115bf82285ebd87c6bab25",
+        "eec4c948a7750ba3c15e2089f1ce13fc29b6f7f3e4eeaa84b0c503ec64f5d9a4"
+      ]
+    },
+    {
+      "id": "ha-inventory-exporter",
+      "portfolio": "Inventory Exporter",
+      "website": "assets/icons/ha-inventory-exporter-96.png",
+      "repo": "ha-inventory-exporter",
+      "source": [
+        "ha-inventory-exporter_icon.png",
+        "ha-inventory-exporter_icon@2x.png",
+        "ha-inventory-exporter_icon_master.jpg"
+      ],
+      "sha256": [
+        "ec055581f485c08a4e95ab3f0883c5594af98651a52cf92b83c5eac5ebe33929",
+        "e40c0c3baab811a6bd90f81e467c753884339e09eeeba325e7549e60f83782a5",
+        "29657708b41857ff3abadbf460407ccae5c468596e8a76486f68a12bef3d8f82"
+      ]
+    },
+    {
+      "id": "ha-repo-updater",
+      "portfolio": "Repo Updater",
+      "website": "assets/icons/ha-repo-updater-96.png",
+      "repo": "ha-repo-updater",
+      "source": [
+        "ha-repo-updater_icon.png",
+        "ha-repo-updater_icon@2x.png",
+        "ha-repo-updater_icon_master.jpg"
+      ],
+      "sha256": [
+        "8f04f70a34fbf749c3bb2cabfc107fad637e2dd1706716400df216abd1de7e06",
+        "b65fa5effdffb66203574423a87b33de43dd36ddc75c9d2c9fd126a62de83939",
+        "15d6e5c5961f408f3da21c856fac503f75d84a8b84ad5597168d33be47e69cb5"
+      ]
+    }
+  ],
+  "extra_website_asset": {
+    "id": "ha-certificate-guardian",
+    "website": "assets/icons/ha-certificate-guardian.jpg",
+    "note": "This icon exists on the website but is not included in the supplied 10-product ZIP set. No source master/retina file was supplied for it."
+  },
+  "validation": {
+    "zip_archives_opened": 3,
+    "source_families": 10,
+    "expected_file_count": 30,
+    "actual_file_count": 30,
+    "dimensions_checked": true,
+    "filename_family_matching": true,
+    "sha256_computed": true,
+    "remote_site_binary_sha256_comparison": false,
+    "remote_comparison_note": "The website paths were checked in the repository tree and their references in index.html were inspected. The GitHub connector did not provide raw binary bytes for pixel-/SHA-level comparison against the uploaded ZIPs. Therefore exact equality of the deployed JPEG/PNG files to the ZIP originals is not yet certified."
+  }
+}
