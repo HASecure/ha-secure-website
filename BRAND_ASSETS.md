@@ -2,55 +2,78 @@
 
 Stand: 23.11.2026
 
-## Verbindliche Quelle
+## Verbindliche Quellen
 
-Die drei von Denise bereitgestellten Archive definieren denselben kanonischen Satz aus **10 Produkt-Icon-Familien**:
+Die drei von Denise bereitgestellten Originalarchive definieren den unveränderten kanonischen Satz aus **10 Produkt-Icon-Familien**:
 
-- `HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip`: RGBA-PNG, 256×256
-- `HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip`: RGBA-PNG, 512×512
-- `HA_Secure_App_Icons_Master_HighRes_10_Icons.zip`: RGB-JPG, 1024×1024
+- `HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip`: 256×256 RGBA PNG
+- `HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip`: 512×512 RGBA PNG
+- `HA_Secure_App_Icons_Master_HighRes_10_Icons.zip`: 1024×1024 RGB JPG
 
-Zuordnung über gemeinsame Produkt-ID (Dateiname ohne Suffix):
-| Produkt-ID | Portfolio-Bezeichnung |
-|---|---|
-| ha-synology-file-connector | Synology File Connector |
-| ha-multi-nas-file-connector | Universal / Multi-NAS File Connector |
-| ha-repo-config-guard | Repo Config Guard |
-| ha-ai-diagnostics | AI Diagnostics |
-| ha-presence-simulator | Presence Simulator |
-| ha-wireguard-client-app | WireGuard Client App |
-| ha-wireguard-client | WireGuard Client |
-| ha-secure-guard | HA Secure Guard |
-| ha-inventory-exporter | Inventory Exporter |
-| ha-repo-updater | Repo Updater |
+Das ergänzende Paket `HA_Secure_Brand_Asset_Library_v1.1.0.zip` enthält zusätzlich das eigens erstellte **Certificate-Guardian-Icon** in 256×256 PNG, 512×512 PNG und 1024×1024 Master-JPG. Damit umfasst das Portfolio elf Produkt-Icon-Familien: zehn aus den Originalarchiven plus Certificate Guardian als separat ergänztes elftes Produkt. Die ursprünglichen zehn werden dadurch nicht umbenannt oder ersetzt.
 
-## Abgleich mit Website
+## Kanonische Zuordnung
 
-Die Website führt elf Produktkarten. Zehn Karten lassen sich auf den kanonischen Satz abbilden; **Certificate Guardian** besitzt in den drei 10er-Archiven kein eigenes Icon. Es darf nicht stillschweigend das SSL-Motiv aus einem zusätzlichen Einzelbild als Teil des kanonischen 10er-Satzes ausgegeben werden. Dieses Motiv ist ein separater Kandidat und braucht eine eigene freigegebene Produktdatei.
+| Produkt-ID | Repository | Asset |
+|---|---|---|
+| `ha-synology-file-connector` | `ha-synology-file-connector` | Synology File Connector |
+| `ha-multi-nas-file-connector` | `ha-universal-nas-connector` | Universal / Multi-NAS File Connector |
+| `ha-repo-config-guard` | `ha-repo-config-guard` | Repo Config Guard |
+| `ha-ai-diagnostics` | `ha-ai-diagnostics` | AI Diagnostics |
+| `ha-presence-simulator` | `ha-presence-simulator` | Presence Simulator |
+| `ha-wireguard-client-app` | `ha-wireguard-client-app` | WireGuard Client App |
+| `ha-wireguard-client` | `ha-wireguard-client` | WireGuard Client |
+| `ha-secure-guard` | `ha-secure-guard` | HA Secure Guard |
+| `ha-inventory-exporter` | `ha-inventory-exporter` | Inventory Exporter |
+| `ha-repo-updater` | `ha-repo-updater` | Repo Updater |
+| `ha-certificate-guardian` | `ha-certificate-guardian` | Certificate Guardian (separate v1.1.0 supplement) |
 
-Die vorhandene Website nutzt teilweise abweichende ältere Dateinamen bzw. Formate (z. B. JPG, `-96.png`, `universal-nas-connector`). Der Produkt-/Dateinamen-Abgleich ist daher nicht identisch mit der neuen kanonischen Benennung.
+**Wichtig:** Repo Updater verwendet ausschließlich `ha-repo-updater`; Repo Config Guard ausschließlich `ha-repo-config-guard`. Synology File Connector verwendet ausschließlich `ha-synology-file-connector`; Universal / Multi-NAS File Connector ausschließlich `ha-multi-nas-file-connector`.
 
-## Zusätzliche Einzelbilder
+## Größen und Home-Assistant-Einbindung
 
-Sieben zusätzlich bereitgestellte JPEGs wurden visuell geprüft. Sechs Motive stimmen thematisch mit Produkten des 10er-Satzes überein (Synology, Multi-NAS, Repo Config Guard, Inventory Exporter, Repo Updater und KI/Shield); das SSL-Motiv ist ein zusätzlicher Certificate-Guardian-Kandidat. Sie ersetzen nicht automatisch die Masterdateien. Die einzelnen JPEGs sind nicht Teil der drei ZIP-Archive.
+Für echte Home-Assistant-Integrationen gilt:
 
-## Technische Integritätsprüfung
+- Standard-Icon: `custom_components/<domain>/brand/icon.png`, exakt 256×256 PNG.
+- HiDPI-Icon: `custom_components/<domain>/brand/icon@2x.png`, exakt 512×512 PNG.
+- Master-JPG 1024×1024 ist die hochauflösende Quelle/Preview und wird nicht als HA-Icon eingesetzt.
+- `<domain>` muss zuerst aus dem jeweiligen `manifest.json` übernommen werden. Kein Domain-Name wird aus dem Repository-Namen geraten.
+- Quadratische Original-Icons werden bytegetreu kopiert. Keine Neugenerierung, Umfärbung, MDI-Ersatzgrafik oder verlustbehaftete Umwandlung.
 
-Alle 30 Dateien (10 Produkt-IDs × 3 Auflösungs-/Mastervarianten) wurden aus den Archiven gelesen:
-- 10/10 PNG-Dateien 256×256, RGBA
-- 10/10 PNG-Dateien 512×512, RGBA
-- 10/10 Master-JPGs 1024×1024, RGB
-- Dateizuordnung vollständig: jede Produkt-ID besitzt alle drei Varianten
-- SHA-256-Prüfsummen sind in `brand-assets/manifest.json` hinterlegt.
+Eine eigenständige App (WireGuard Client App) wird als App gebrandet, aber nicht fälschlich als Home-Assistant-Integration deklariert. Design-Repositories ohne vorhandenes Integrationsmanifest erhalten eine dokumentierte Produktzuordnung; ein HA-Zielpfad wird erst nach Festlegung einer echten Domain gesetzt.
 
-## Einbindung – Status
+## Screenshot-Abgleich – 23.11.2026, 03:14:27
 
-Die Website- und Repository-Dateinamen-/Produktzuordnung ist dokumentiert. Die Binärdateien sind in diesem Commit **noch nicht** in GitHub hochgeladen und deshalb auch noch nicht als Website-Assets live eingebunden. Siehe mitgeliefertes Paket `HA_Secure_Brand_Assets_Validated_10_Products.zip`. Nach dem Upload müssen Bild-URLs und Prüfsummen gegen das Manifest validiert werden. Erst danach darf die Website-Galerie als vollständig bezeichnet werden.
+Der vom Projekt bereitgestellte Home-Assistant-Screenshot hebt vier Integrationen hervor:
 
-## Regeln für künftige Änderungen
+| Integration | Markierung im Screenshot | Korrekte Produkt-ID |
+|---|---|---|
+| Certificate Guardian | Rot – falsches/fehlendes Produkt-Branding | `ha-certificate-guardian` |
+| HA Secure Repo Updater | Rot – falsches/fehlendes Produkt-Branding | `ha-repo-updater` |
+| Synology File Connector | Rot – falsches/fehlendes Produkt-Branding | `ha-synology-file-connector` |
+| HA Secure Inventory Exporter | Grün – visuell richtige Produktfamilie | `ha-inventory-exporter` |
 
-1. Produkt-ID bleibt stabil; Anzeigenamen dürfen sich ändern.
-2. 256-PNG ist Standard für kleine Brand-Assets, 512-PNG für hochauflösende Darstellung, 1024-JPG nur Master/Preview.
-3. Website-Karten, README-Dateien und Manifest referenzieren dieselbe Produkt-ID.
-4. Keine MDI-Icons als Ersatz für eigenständige Produkt-Brand-Icons verwenden.
-5. Zusätzliche Produkte (z. B. Certificate Guardian) erhalten eigene freigegebene Assets und werden nicht in die bestehende 10er-Sammlung hineingedeutet.
+Das grüne Inventory-Exporter-Motiv ist als Produktfamilie richtig. Die vorhandene Datei wurde technisch jedoch nicht als Originaldatei in 256×256 bestätigt; die HiDPI-Datei fehlte. Grün bedeutet daher korrekte Motiv-Zuordnung, nicht bereits nachgewiesene Größen-/Byte-Parität.
+
+## Technischer Ist-Stand der drei vorhandenen Integrations-Repositories
+
+Prüfung des jeweiligen `main`-Branches am 23.11.2026:
+
+| Repository / Domain | 256×256 `icon.png` | 512×512 `icon@2x.png` | Ergebnis |
+|---|---|---|---|
+| Synology File Connector / `synology_file_connector` | vorhanden, aber nicht Originaldatei | fehlt | ersetzen/ergänzen |
+| Repo Updater / `ha_repo_updater` | vorhanden, aber nicht Originaldatei | fehlt | ersetzen/ergänzen |
+| Inventory Exporter / `ha_inventory_exporter` | vorhanden, aber nicht Originaldatei | fehlt | ersetzen/ergänzen |
+
+Für die übrigen Produkt-Repositories ist derzeit keine HA-Integrationsdomain im Main-Branch nachgewiesen. Dort wird deshalb keine Domain oder Custom-Component-Struktur erfunden.
+
+## Upload-/Freigabestatus
+
+Die Produktzuordnungen, 256-/512-Quellprüfsummen und die pro Repository geltenden Zielpfade sind in den jeweiligen `BRAND_ASSETS.md`-Dateien und – für die drei bereits vorhandenen Integrationen – in `custom_components/<domain>/brand/ASSET_SOURCE.json` dokumentiert.
+
+**Die Original-Binärdateien sind in diesem Dokumentationsstand noch nicht in die einzelnen GitHub-Repositories übertragen.** Das ist der verbleibende technische Schritt, bevor HA die korrekten Originale tatsächlich in der Integrationsliste anzeigen kann. Ein Dokumentations-Commit allein ändert die in HA sichtbaren Symbole nicht.
+
+## Referenzen
+
+- Offizielle Home-Assistant-Branding-Dokumentation: https://contributors.home-assistant.io/core/integrations/brands/
+- Zentrales Asset-Manifest: `assets/icons/brand-icons-manifest.json`
