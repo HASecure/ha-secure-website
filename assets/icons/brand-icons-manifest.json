@@ -1,0 +1,27 @@
+{
+  "brand": "HA Secure",
+  "version": "2026-11-23",
+  "canonical_product_count": 10,
+  "formats": {
+    "standard": "256x256 RGBA PNG",
+    "retina": "512x512 RGBA PNG",
+    "master": "1024x1024 RGB JPG"
+  },
+  "source_archives": [
+    "HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip",
+    "HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip",
+    "HA_Secure_App_Icons_Master_HighRes_10_Icons.zip"
+  ],
+  "products": [
+    {"id":"ha-synology-file-connector","website_name":"Synology File Connector","standard":"ha-synology-file-connector_icon.png","retina":"ha-synology-file-connector_icon@2x.png","master":"ha-synology-file-connector_icon_master.jpg","sha256_standard":"76e2fe9ca43586e010dfe0a75bcd5ebc24de4c3f1acd33df30b61a187f1e0368","sha256_retina":"af6cd7f6e714d7d85fbdcf45884484f51783815c95fa4b905fb46da31a2c266d","sha256_master":"48f0c8b059cd5426cc450cee568638d6330ab44754d436e704776450ca89a957"},
+    {"id":"ha-multi-nas-file-connector","website_name":"Universal / Multi-NAS File Connector","standard":"ha-multi-nas-file-connector_icon.png","retina":"ha-multi-nas-file-connector_icon@2x.png","master":"ha-multi-nas-file-connector_icon_master.jpg","sha256_standard":"94b492b961ce0a8eb8c43e159e6b0b2df5a4e0d7cbc200c56b682b50a1128d05","sha256_retina":"04fe7f8d1eac481b2bb9805e70ef99bec5ff2a649d761e7ccc43f6b14481133d","sha256_master":"cf6d75def47e4f9912fb48d8afc4489825fde3d7678fb32b463dbe16d34fb862"},
+    {"id":"ha-repo-config-guard","website_name":"Repo Config Guard","standard":"ha-repo-config-guard_icon.png","retina":"ha-repo-config-guard_icon@2x.png","master":"ha-repo-config-guard_icon_master.jpg","sha256_standard":"df3d49456980002266bef1ea2aa281e535e4012d0e8e081fe3ea838c1d35171c","sha256_retina":"e32fc38844c68c635728ac663531bfa833437fb853fbbc41de964fd9fdfb51b7","sha256_master":"d3475101e53b475bae97682883cca406f7ba7dd8631dac45566edad219a261de"},
+    {"id":"ha-ai-diagnostics","website_name":"AI Diagnostics","standard":"ha-ai-diagnostics_icon.png","retina":"ha-ai-diagnostics_icon@2x.png","master":"ha-ai-diagnostics_icon_master.jpg","sha256_standard":"7b327ea3077d477febbad561c440b88546f0d3e886950fd80ba2fc450198e227","sha256_retina":"8d3e87055da612121efa87484eaf16d9c5b285798065a9dbf88ad38ef4cee51d","sha256_master":"a99092a7bdfeed1692d19277be8bd1484cc5abf5db4e1f4f5ff5e68a540d9da5"},
+    {"id":"ha-presence-simulator","website_name":"Presence Simulator","standard":"ha-presence-simulator_icon.png","retina":"ha-presence-simulator_icon@2x.png","master":"ha-presence-simulator_icon_master.jpg","sha256_standard":"9fd54fb49a583faff805ebffd3204713639a4480b998cb98627d2c6ced146c27","sha256_retina":"e3af2f2efec5966d0ba2ca538704b1a6969f1a4ce990769514e560be3b28896a","sha256_master":"d66a40718d7002ef26f11e598d10d638720f15e19c28bce37549efa89b5cf9cb"},
+    {"id":"ha-wireguard-client-app","website_name":"WireGuard Client App","standard":"ha-wireguard-client-app_icon.png","retina":"ha-wireguard-client-app_icon@2x.png","master":"ha-wireguard-client-app_icon_master.jpg","sha256_standard":"0864b3f66ca536bf412ce0df74c96e8b7f7f136e2410d23a2b0f2fb8de051dee","sha256_retina":"449ee39593e4e818111a3898427e5cae1b8aab30930e8bed47c1d244f51cc245","sha256_master":"a5f95396c215d7c450732f3934df44faf861ed6843bd1f362c97d4e5cd4ad553"},
+    {"id":"ha-wireguard-client","website_name":"WireGuard Client","standard":"ha-wireguard-client_icon.png","retina":"ha-wireguard-client_icon@2x.png","master":"ha-wireguard-client_icon_master.jpg","sha256_standard":"0dde2037f1134bfa20054251a372f412dbd352728d6f34fd7c257066e4333f56","sha256_retina":"214a47b3cf73e35fe0dc801228d55f6ef2cf713ff08e20e08919927571159341","sha256_master":"71be89e7b3445d205e16c5cb84e7bbf1bd8e9e0856efa34d8f85c64c93716539"},
+    {"id":"ha-secure-guard","website_name":"HA Secure Guard","standard":"ha-secure-guard_icon.png","retina":"ha-secure-guard_icon@2x.png","master":"ha-secure-guard_icon_master.jpg","sha256_standard":"63b29af102c128a74a8c68b4ad6c3c1f7fa4c99dcae0db0b4cf5f3d398415322","sha256_retina":"ac9b500f7cd579c343c2c764b471abfd1cbdd6548f115bf82285ebd87c6bab25","sha256_master":"eec4c948a7750ba3c15e2089f1ce13fc29b6f7f3e4eeaa84b0c503ec64f5d9a4"},
+    {"id":"ha-inventory-exporter","website_name":"Inventory Exporter","standard":"ha-inventory-exporter_icon.png","retina":"ha-inventory-exporter_icon@2x.png","master":"ha-inventory-exporter_icon_master.jpg","sha256_standard":"ec055581f485c08a4e95ab3f0883c5594af98651a52cf92b83c5eac5ebe33929","sha256_retina":"e40c0c3baab811a6bd90f81e467c753884339e09eeeba325e7549e60f83782a5","sha256_master":"29657708b41857ff3abadbf460407ccae5c468596e8a76486f68a12bef3d8f82"},
+    {"id":"ha-repo-updater","website_name":"Repo Updater","standard":"ha-repo-updater_icon.png","retina":"ha-repo-updater_icon@2x.png","master":"ha-repo-updater_icon_master.jpg","sha256_standard":"8f04f70a34fbf749c3bb2cabfc107fad637e2dd1706716400df216abd1de7e06","sha256_retina":"b65fa5effdffb66203574423a87b33de43dd36ddc75c9d2c9fd126a62de83939","sha256_master":"15d6e5c5961f408f3da21c856fac503f75d84a8b84ad5597168d33be47e69cb5"}
+  ]
+}
