@@ -43,8 +43,8 @@ def main() -> int:
             fail(f"{html_name} fehlt")
             continue
         content = path.read_text(encoding="utf-8")
-        refs = re.findall(r'src=["\\'](assets/icons/[^"\\']+)["\\']', content)
-        cards = len(re.findall(r'<article class=["\\']product-card["\\']', content))
+        refs = re.findall(r"src=['\\"](assets/icons/[^'\\"]+)['\\"]", content)
+        cards = len(re.findall(r"<article class=['\\"]product-card['\\"]", content))
         if cards != 11:
             fail(f"{html_name}: 11 Produktkarten erwartet, gefunden {cards}")
         for ref in refs:
