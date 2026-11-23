@@ -4,7 +4,9 @@ Stand: 23.11.2026
 
 ## Verbindliche Quelle
 
-Die drei von Denise bereitgestellten Archive definieren denselben kanonischen Satz aus **10 Produkt-Icon-Familien**:
+Referenz für die Produkt-Brand-Dateien ist die Brand-SSOT `brand-source/` im Repository `HASecure/ha-inventory-exporter` (Stand main, 23.11.2026); alle elf Produkt-Repos führen `brand-source/`, `BRAND_ASSETS.md` und den Workflow `brand-assets.yml` auf main. Das Website-Icon-Manifest `assets/icons/brand-icons-manifest.json` beschreibt den ursprünglichen 10er-Satz aus den drei von Denise bereitgestellten Archiven (Stand 2026-11-23) und ist nicht identisch mit den auf der Website eingebundenen älteren Dateien.
+
+Die drei Archive definieren denselben kanonischen Satz aus **10 Produkt-Icon-Familien**:
 
 - `HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip`: RGBA-PNG, 256×256
 - `HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip`: RGBA-PNG, 512×512
@@ -45,7 +47,7 @@ Alle 30 Dateien (10 Produkt-IDs × 3 Auflösungs-/Mastervarianten) wurden aus de
 
 ## Einbindung – Status
 
-Die Website- und Repository-Dateinamen-/Produktzuordnung ist dokumentiert. Die Binärdateien sind in diesem Commit **noch nicht** in GitHub hochgeladen und deshalb auch noch nicht als Website-Assets live eingebunden. Siehe mitgeliefertes Paket `HA_Secure_Brand_Assets_Validated_10_Products.zip`. Nach dem Upload müssen Bild-URLs und Prüfsummen gegen das Manifest validiert werden. Erst danach darf die Website-Galerie als vollständig bezeichnet werden.
+Stand 23.11.2026: Die auf der Website eingebundenen Icons (`assets/icons/*.jpg`, `*-96.png`) sind ältere Dateien und nicht als byte-identisch zur Brand-SSOT geprüft; ein Austausch gegen die SSOT-Dateien (256/512 PNG) steht aus. Die Website-Galerie darf erst nach Validierung gegen das Manifest als SSOT-konform bezeichnet werden.
 
 ## Regeln für künftige Änderungen
 
