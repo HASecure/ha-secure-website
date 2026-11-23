@@ -21,3 +21,8 @@ Die Website bildet Produktstatus ab, ist aber keine Quelle für Runtime-Funktion
 - Keine Beta-Verfügbarkeit oder Produktfunktion behaupten, die nicht im jeweiligen Produkt-Repo belegt ist.
 
 Dokumentation only. Keine Website-Veröffentlichung, kein Main-Merge und keine Aktivierung der Registrierung.
+
+
+## Nachtrag – Portfolio-Validierung
+
+Der neue [docs/PORTFOLIO_VALIDATION_CONTRACT.md](PORTFOLIO_VALIDATION_CONTRACT.md) definiert WEB-001 bis WEB-010 für Produkt-ID/Version, belegte Statusangaben, Branding-Prüfsummen, Link Health, Datenschutz und Beta-Registrierung. Die Website bleibt eine Darstellungsschicht und ist keine Quelle für Runtime-Funktionalität. Veröffentlichung und Beta-Anmeldung bleiben separat freigabepflichtig.
