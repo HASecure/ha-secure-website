@@ -7,13 +7,17 @@ HA Secure entwickelt eigenständige Home-Assistant-Erweiterungen für Sicherheit
 
 ## Portfolio
 
-Die Website stellt neun Projekte mit kurzen deutschen und englischen Beschreibungen, Produktpositionierung und transparentem Entwicklungsstatus vor. Geplante Funktionen sind ausdrücklich als geplant gekennzeichnet.
+Die Website stellt elf Projekte mit kurzen deutschen und englischen Beschreibungen, Produktpositionierung und transparentem Entwicklungsstatus vor. Geplante Funktionen sind ausdrücklich als geplant gekennzeichnet.
 
 - [Portfolio-Startseite](index.html)
 - [Produktpositionierung](positioning.html)
 - [AI- und Sicherheitsprinzipien](principles.html)
 - [Beta-Programm](beta.html)
 - [Datenschutzhinweise](privacy.html)
+
+## Brand Assets
+
+Die Portfolio-Karten und Produkt-READMEs verwenden die zehn gelieferten HA-Secure-Icon-Familien. Die verbindliche Produkt-/Dateizuordnung, 256-/512-/Master-Dateinamen, Quell-Prüfsummen und bekannte Ausnahmen sind in [brand-icons-manifest.json](brand-icons-manifest.json) dokumentiert. Das zusätzliche Certificate-Guardian-Icon ist nicht Teil des gelieferten 10er-Satzes.
 
 ## Feedback
 
