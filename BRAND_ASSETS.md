@@ -1,77 +1,43 @@
-# HA Secure – Brand-Icon-Katalog und Abgleich
+# HA Secure – Website-Icons und Brand-Abgleich
 
-Stand: 23.11.2026
+**Stand:** 24.11.2026
 
-## Verbindliche Quelle
+## Portfolio und Icon-Abdeckung
 
-Referenz für die Produkt-Brand-Dateien ist die Brand-SSOT `brand-source/` im Repository `HASecure/ha-inventory-exporter` (Stand main, 23.11.2026); alle elf Produkt-Repos führen `brand-source/`, `BRAND_ASSETS.md` und den Workflow `brand-assets.yml` auf main. Das Website-Icon-Manifest `assets/icons/brand-icons-manifest.json` beschreibt den ursprünglichen 10er-Satz aus den drei von Denise bereitgestellten Archiven (Stand 2026-11-23) und ist nicht identisch mit den auf der Website eingebundenen älteren Dateien.
+Das öffentliche Portfolio umfasst zwölf eigenständige Produkte. Auf der Website sind zwölf separate Produkt-Icon-Dateien unter `assets/icons/` eingebunden:
 
-Die drei Archive definieren denselben kanonischen Satz aus **10 Produkt-Icon-Familien**:
+1. Synology File Connector
+2. Universal NAS Connector
+3. Repo Config Guard
+4. AI Diagnostics
+5. Presence Simulator
+6. WireGuard Client App
+7. WireGuard Client Integration
+8. HA Secure Guard
+9. Certificate Guardian
+10. Inventory Exporter
+11. Repo Updater
+12. HA Secure Dev Board
 
-- `HA_Secure_Brand_Icons_256x256_PNG_10_Icons.zip`: RGBA-PNG, 256×256
-- `HA_Secure_Brand_Icons_512x512_PNG_10_Icons.zip`: RGBA-PNG, 512×512
-- `HA_Secure_App_Icons_Master_HighRes_10_Icons.zip`: RGB-JPG, 1024×1024
+Das HA Secure Dev Board ist Produkt 12. Sein Icon liegt unter `assets/icons/ha-secure-dev-board.png` und stammt aus dem `brand-source/icon.png` des privaten Dev-Board-Repositories. Es ist als Produkt-Icon in der Website eingebunden; aus der privaten Quelle wird kein Downloadlink abgeleitet.
 
-Zuordnung über gemeinsame Produkt-ID (Dateiname ohne Suffix):
-| Produkt-ID | Portfolio-Bezeichnung |
-|---|---|
-| ha-synology-file-connector | Synology File Connector |
-| ha-multi-nas-file-connector | Universal / Multi-NAS File Connector |
-| ha-repo-config-guard | Repo Config Guard |
-| ha-ai-diagnostics | AI Diagnostics |
-| ha-presence-simulator | Presence Simulator |
-| ha-wireguard-client-app | WireGuard Client App |
-| ha-wireguard-client | WireGuard Client |
-| ha-secure-guard | HA Secure Guard |
-| ha-inventory-exporter | Inventory Exporter |
-| ha-repo-updater | Repo Updater |
+## Kanonische Brand-Quellen
 
-## Abgleich mit Website
+Die ursprünglichen bereitgestellten Brand-Archive enthalten zehn Produkt-Icon-Familien in 256×256 RGBA-PNG, 512×512 RGBA-PNG und 1024×1024 RGB-JPG. Diese 10er-Archivsammlung ist ein historischer Asset-Satz und nicht die aktuelle Anzahl der Portfolio-Produkte.
 
-Die Website führt elf Produktkarten. Zehn Karten lassen sich auf den kanonischen Satz abbilden; **Certificate Guardian** besitzt in den drei 10er-Archiven kein eigenes Icon. Es darf nicht stillschweigend das SSL-Motiv aus einem zusätzlichen Einzelbild als Teil des kanonischen 10er-Satzes ausgegeben werden. Dieses Motiv ist ein separater Kandidat und braucht eine eigene freigegebene Produktdatei.
+Certificate Guardian und HA Secure Dev Board kamen als separate Produkt-Icons hinzu. Die frühere Aussage, Certificate Guardian habe kein eigenes Icon oder die Website enthalte nur elf Produktkarten, ist überholt.
 
-Die vorhandene Website nutzt teilweise abweichende ältere Dateinamen bzw. Formate (z. B. JPG, `-96.png`, `universal-nas-connector`). Der Produkt-/Dateinamen-Abgleich ist daher nicht identisch mit der neuen kanonischen Benennung.
+## Integrität und Grenzen des Nachweises
 
-## Zusätzliche Einzelbilder
+- Die Website bindet zwölf eigenständige Produkt-Icon-Dateien ein.
+- Für elf Produkte wurde die jeweilige Datei aus der Brand-Quelle des Produkt-Repositories übernommen; das Dev-Board-Icon stammt aus dessen eigener Brand-Quelle.
+- Das vorhandene 10er-Manifest beschreibt weiterhin nur die ursprüngliche Archivsammlung. Es ist kein vollständiges Manifest aller zwölf Website-Produkte.
+- Ein vollständiger bytegenauer Abgleich sämtlicher Website-Dateien gegen alle 512-px-Varianten und 1024-px-Master ist nicht als abgeschlossen dokumentiert. Diese Prüfung wird hier nicht als erfolgt behauptet.
 
-Sieben zusätzlich bereitgestellte JPEGs wurden visuell geprüft. Sechs Motive stimmen thematisch mit Produkten des 10er-Satzes überein (Synology, Multi-NAS, Repo Config Guard, Inventory Exporter, Repo Updater und KI/Shield); das SSL-Motiv ist ein zusätzlicher Certificate-Guardian-Kandidat. Sie ersetzen nicht automatisch die Masterdateien. Die einzelnen JPEGs sind nicht Teil der drei ZIP-Archive.
+## Verbindliche Regeln
 
-## Technische Integritätsprüfung
-
-Alle 30 Dateien (10 Produkt-IDs × 3 Auflösungs-/Mastervarianten) wurden aus den Archiven gelesen:
-- 10/10 PNG-Dateien 256×256, RGBA
-- 10/10 PNG-Dateien 512×512, RGBA
-- 10/10 Master-JPGs 1024×1024, RGB
-- Dateizuordnung vollständig: jede Produkt-ID besitzt alle drei Varianten
-- SHA-256-Prüfsummen sind in `brand-assets/manifest.json` hinterlegt.
-
-## Einbindung – Status
-
-Stand 24.11.2026: Die älteren Web-Icons (`*.jpg`, `*-96.png`) waren zu keiner SSOT-Datei byte-identisch (abgeleitete Verkleinerungen). Ableitungsprüfung: jedes Web-Icon wurde auf Größe skaliert und gegen die `brand-source/icon.png` aller elf Repos verglichen; bei zehn Produkten war der Treffer des eigenen Repos eindeutig (mittlere Abweichung 3,9–7,7 von 255, nächster fremder Treffer ≥ 32). Diese zehn wurden durch die jeweilige `brand-source/icon.png` (256×256 RGBA, Blob aus dem Repo-`main`) ersetzt; die alten Dateien sind entfernt.
-
-| Repo | Web-Icon-Datei | Quelle | SHA-256 (Anfang) |
-|---|---|---|---|
-| ha-synology-file-connector | `assets/icons/ha-synology-file-connector.png` | `brand-source/icon.png` in HASecure/ha-synology-file-connector | `76e2fe9ca43586e0…` |
-| ha-universal-nas-connector | `assets/icons/ha-universal-nas-connector.png` | `brand-source/icon.png` in HASecure/ha-universal-nas-connector | `94b492b961ce0a8e…` |
-| ha-repo-config-guard | `assets/icons/ha-repo-config-guard.png` | `brand-source/icon.png` in HASecure/ha-repo-config-guard | `df3d494569800022…` |
-| ha-ai-diagnostics | `assets/icons/ha-ai-diagnostics.png` | `brand-source/icon.png` in HASecure/ha-ai-diagnostics | `7b327ea3077d477f…` |
-| ha-presence-simulator | `assets/icons/ha-presence-simulator.png` | `brand-source/icon.png` in HASecure/ha-presence-simulator | `9fd54fb49a583faf…` |
-| ha-wireguard-client-app | `assets/icons/ha-wireguard-client-app.png` | `brand-source/icon.png` in HASecure/ha-wireguard-client-app | `0864b3f66ca536bf…` |
-| ha-wireguard-client | `assets/icons/ha-wireguard-client.png` | `brand-source/icon.png` in HASecure/ha-wireguard-client | `0dde2037f1134bfa…` |
-| ha-secure-guard | `assets/icons/ha-secure-guard.png` | `brand-source/icon.png` in HASecure/ha-secure-guard | `63b29af102c128a7…` |
-| ha-inventory-exporter | `assets/icons/ha-inventory-exporter.png` | `brand-source/icon.png` in HASecure/ha-inventory-exporter | `ec055581f485c08a…` |
-| ha-repo-updater | `assets/icons/ha-repo-updater.png` | `brand-source/icon.png` in HASecure/ha-repo-updater | `8f04f70a34fbf749…` |
-
-Certificate Guardian (nachträglich geklärt): Die Abweichung 16,8 beruht auf einer anderen Tonwert-/Rendervariante desselben Motivs, nicht auf einem anderen Produkt oder Zuschnitt (Strukturkorrelation 0,92 nach Kontrastangleichung gegenüber 0,28 bei einem fremden Icon; Zuschnitt-/Skalierungstest ergibt das Minimum bei 1,0, Hintergrundfarbe ohne Einfluss, da das Icon deckend ist). Das SSL-Motiv gehört nur zu Certificate Guardian; das ältere Web-Icon war eine dunklere Variante. Ersetzt durch `brand-source/icon.png` aus HASecure/ha-certificate-guardian (SHA-256 `de86a14c004c72d6…`, Datei `assets/icons/ha-certificate-guardian.png`). Damit sind elf von elf Karten-Icons SSOT-basiert; der frühere Hinweis auf ein fehlendes Certificate-Guardian-Icon ist überholt.
-
-Offen:
-- **ha-secure-dev-board:** gelistet (Karte 12/12, Beta-Kandidat). Icon `assets/icons/ha-secure-dev-board.png` = `brand-source/icon.png` aus HASecure/ha-secure-dev-board (main, nach Brand-PR #2), SHA-256 `42348c8057b39658…`. Repo ist nicht öffentlich: keine Repo-/Download-Links.
-- Der Hash-Abgleich gegen die 1024-px-Master wurde nicht durchgeführt (Web-Icons sind Ableitungen); ein Vergleich mit `brand-icons-manifest.json` (10er-Archivsatz) bleibt separat.
-
-## Regeln für künftige Änderungen
-
-1. Produkt-ID bleibt stabil; Anzeigenamen dürfen sich ändern.
-2. 256-PNG ist Standard für kleine Brand-Assets, 512-PNG für hochauflösende Darstellung, 1024-JPG nur Master/Preview.
-3. Website-Karten, README-Dateien und Manifest referenzieren dieselbe Produkt-ID.
-4. Keine MDI-Icons als Ersatz für eigenständige Produkt-Brand-Icons verwenden.
-5. Zusätzliche Produkte (z. B. Certificate Guardian) erhalten eigene freigegebene Assets und werden nicht in die bestehende 10er-Sammlung hineingedeutet.
+1. Produkt-IDs bleiben stabil; Anzeigenamen dürfen sich ändern.
+2. Jede Portfolio-Karte verwendet das eigene Brand-Icon des jeweiligen Produkts.
+3. Website-Karten, Positionierungsseite und Beta-Übersicht verwenden dieselbe Produkt-ID und dieselbe Icon-Datei.
+4. Keine MDI- oder generischen System-Icons als Ersatz für eigenständige Produkt-Brand-Icons verwenden.
+5. Zusätzliche Produkte werden als eigene Icon-Familien geführt und nicht nachträglich in die ursprüngliche 10er-Archivsammlung hineingedeutet.
