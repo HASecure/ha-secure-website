@@ -21,6 +21,9 @@ body:
         - WireGuard Client Integration
         - HA Secure Guard
         - Certificate Guardian
+        - Inventory Exporter
+        - Repo Updater
+        - HA Secure Dev Board
         - Mehrere Produkte
     validations:
       required: true
