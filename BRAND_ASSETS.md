@@ -47,7 +47,26 @@ Alle 30 Dateien (10 Produkt-IDs × 3 Auflösungs-/Mastervarianten) wurden aus de
 
 ## Einbindung – Status
 
-Stand 23.11.2026: Die auf der Website eingebundenen Icons (`assets/icons/*.jpg`, `*-96.png`) sind ältere Dateien und nicht als byte-identisch zur Brand-SSOT geprüft; ein Austausch gegen die SSOT-Dateien (256/512 PNG) steht aus. Die Website-Galerie darf erst nach Validierung gegen das Manifest als SSOT-konform bezeichnet werden.
+Stand 24.11.2026: Die älteren Web-Icons (`*.jpg`, `*-96.png`) waren zu keiner SSOT-Datei byte-identisch (abgeleitete Verkleinerungen). Ableitungsprüfung: jedes Web-Icon wurde auf Größe skaliert und gegen die `brand-source/icon.png` aller elf Repos verglichen; bei zehn Produkten war der Treffer des eigenen Repos eindeutig (mittlere Abweichung 3,9–7,7 von 255, nächster fremder Treffer ≥ 32). Diese zehn wurden durch die jeweilige `brand-source/icon.png` (256×256 RGBA, Blob aus dem Repo-`main`) ersetzt; die alten Dateien sind entfernt.
+
+| Repo | Web-Icon-Datei | Quelle | SHA-256 (Anfang) |
+|---|---|---|---|
+| ha-synology-file-connector | `assets/icons/ha-synology-file-connector.png` | `brand-source/icon.png` in HASecure/ha-synology-file-connector | `76e2fe9ca43586e0…` |
+| ha-universal-nas-connector | `assets/icons/ha-universal-nas-connector.png` | `brand-source/icon.png` in HASecure/ha-universal-nas-connector | `94b492b961ce0a8e…` |
+| ha-repo-config-guard | `assets/icons/ha-repo-config-guard.png` | `brand-source/icon.png` in HASecure/ha-repo-config-guard | `df3d494569800022…` |
+| ha-ai-diagnostics | `assets/icons/ha-ai-diagnostics.png` | `brand-source/icon.png` in HASecure/ha-ai-diagnostics | `7b327ea3077d477f…` |
+| ha-presence-simulator | `assets/icons/ha-presence-simulator.png` | `brand-source/icon.png` in HASecure/ha-presence-simulator | `9fd54fb49a583faf…` |
+| ha-wireguard-client-app | `assets/icons/ha-wireguard-client-app.png` | `brand-source/icon.png` in HASecure/ha-wireguard-client-app | `0864b3f66ca536bf…` |
+| ha-wireguard-client | `assets/icons/ha-wireguard-client.png` | `brand-source/icon.png` in HASecure/ha-wireguard-client | `0dde2037f1134bfa…` |
+| ha-secure-guard | `assets/icons/ha-secure-guard.png` | `brand-source/icon.png` in HASecure/ha-secure-guard | `63b29af102c128a7…` |
+| ha-inventory-exporter | `assets/icons/ha-inventory-exporter.png` | `brand-source/icon.png` in HASecure/ha-inventory-exporter | `ec055581f485c08a…` |
+| ha-repo-updater | `assets/icons/ha-repo-updater.png` | `brand-source/icon.png` in HASecure/ha-repo-updater | `8f04f70a34fbf749…` |
+
+Certificate Guardian (nachträglich geklärt): Die Abweichung 16,8 beruht auf einer anderen Tonwert-/Rendervariante desselben Motivs, nicht auf einem anderen Produkt oder Zuschnitt (Strukturkorrelation 0,92 nach Kontrastangleichung gegenüber 0,28 bei einem fremden Icon; Zuschnitt-/Skalierungstest ergibt das Minimum bei 1,0, Hintergrundfarbe ohne Einfluss, da das Icon deckend ist). Das SSL-Motiv gehört nur zu Certificate Guardian; das ältere Web-Icon war eine dunklere Variante. Ersetzt durch `brand-source/icon.png` aus HASecure/ha-certificate-guardian (SHA-256 `de86a14c004c72d6…`, Datei `assets/icons/ha-certificate-guardian.png`). Damit sind elf von elf Karten-Icons SSOT-basiert; der frühere Hinweis auf ein fehlendes Certificate-Guardian-Icon ist überholt.
+
+Offen:
+- **ha-secure-dev-board:** gelistet (Karte 12/12, Beta-Kandidat). Icon `assets/icons/ha-secure-dev-board.png` = `brand-source/icon.png` aus HASecure/ha-secure-dev-board (main, nach Brand-PR #2), SHA-256 `42348c8057b39658…`. Repo ist nicht öffentlich: keine Repo-/Download-Links.
+- Der Hash-Abgleich gegen die 1024-px-Master wurde nicht durchgeführt (Web-Icons sind Ableitungen); ein Vergleich mit `brand-icons-manifest.json` (10er-Archivsatz) bleibt separat.
 
 ## Regeln für künftige Änderungen
 
