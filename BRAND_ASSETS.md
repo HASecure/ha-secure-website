@@ -65,7 +65,7 @@ Stand 24.11.2026: Die älteren Web-Icons (`*.jpg`, `*-96.png`) waren zu keiner S
 Certificate Guardian (nachträglich geklärt): Die Abweichung 16,8 beruht auf einer anderen Tonwert-/Rendervariante desselben Motivs, nicht auf einem anderen Produkt oder Zuschnitt (Strukturkorrelation 0,92 nach Kontrastangleichung gegenüber 0,28 bei einem fremden Icon; Zuschnitt-/Skalierungstest ergibt das Minimum bei 1,0, Hintergrundfarbe ohne Einfluss, da das Icon deckend ist). Das SSL-Motiv gehört nur zu Certificate Guardian; das ältere Web-Icon war eine dunklere Variante. Ersetzt durch `brand-source/icon.png` aus HASecure/ha-certificate-guardian (SHA-256 `de86a14c004c72d6…`, Datei `assets/icons/ha-certificate-guardian.png`). Damit sind elf von elf Karten-Icons SSOT-basiert; der frühere Hinweis auf ein fehlendes Certificate-Guardian-Icon ist überholt.
 
 Offen:
-- **ha-secure-dev-board:** keine Karte und kein Icon, solange dessen Brand-PR (Icon in `brand-source/`) nicht gemergt ist; danach Status „alpha“ ehrlich ausweisen.
+- **ha-secure-dev-board:** gelistet (Karte 12/12, Beta-Kandidat). Icon `assets/icons/ha-secure-dev-board.png` = `brand-source/icon.png` aus HASecure/ha-secure-dev-board (main, nach Brand-PR #2), SHA-256 `42348c8057b39658…`. Repo ist nicht öffentlich: keine Repo-/Download-Links.
 - Der Hash-Abgleich gegen die 1024-px-Master wurde nicht durchgeführt (Web-Icons sind Ableitungen); ein Vergleich mit `brand-icons-manifest.json` (10er-Archivsatz) bleibt separat.
 
 ## Regeln für künftige Änderungen

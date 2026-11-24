@@ -51,3 +51,7 @@ Lokal: interne Links/Assets vorhanden, Tag-Balance, Sitemap wohlgeformt (siehe P
 
 ## Nachtrag Icons (Nutzerentscheid)
 
+
+## Nachtrag Dev Board
+
+Karte in index.html und beta.html (Kartenzähler /12; positioning.html ohne Dev-Board-Karte, nur Zähler angepasst). Status Beta-Kandidat 0.1.0-beta.1-rc.1 (Manifest 0.1.0-beta.1, Prerelease v0.1.0-beta.1-rc.1, Brand-PR #2 und RC-PR #3 gemergt). Repo privat: keine Links.
