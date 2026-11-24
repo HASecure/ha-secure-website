@@ -50,3 +50,7 @@ Text nicht geändert (keine Rechtsberatung). Offen für spätere Ergänzung vor 
 ## Prüfung
 
 Lokal: interne Links/Assets vorhanden, Tag-Balance, Sitemap wohlgeformt (siehe PR-Beschreibung).
+
+## Nachtrag Icons (Nutzerentscheid)
+
+Zehn Web-Icons durch rand-source/icon.png der jeweiligen Repos ersetzt (eindeutige Ableitungszuordnung, Tabelle in BRAND_ASSETS.md); Certificate Guardian bleibt offen (Abweichung 16,8). Dev Board erst nach dessen Brand-PR, HAWallisellen wird nie gelistet. PR #9 wird nicht gemergt.
