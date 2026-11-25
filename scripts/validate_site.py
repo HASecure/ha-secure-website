@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 TOKEN=re.compile(r"\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})\b")
 KEY=re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----")
-HOST=re.compile(r"(?i)\b[a-z0-9][a-z0-9.-]*\.(?:local|lan|home|internal)\b")
+HOST=re.compile(r"(?i)\b[a-z0-9][a-z0-9.-]*\.(?:local|lan|home|internal)(?![a-z0-9-])")
 IP=re.compile(r"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
 class SiteParser(HTMLParser):
     def __init__(self):
