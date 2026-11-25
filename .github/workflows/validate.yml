@@ -1,0 +1,32 @@
+name: HA Secure Website Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ["ci/**", "feat/**", "fix/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  website-static:
+    name: HA Secure Website / Static-HTML-Links-Icons-SECLOG01
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: "3.12"
+      - name: Validate static HTML, local links, icons and SEC-LOG-01
+        run: python scripts/validate_site.py
